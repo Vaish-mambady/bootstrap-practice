@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>4th march practice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            h2{text-align: center; color:firebrick; font-family: fantasy;}
+            pre{background-image: url("pattern1.jpg");}
+            body{background-image:url("brownstripes.jpg");}
+            pre{font-size: 20px;}
+        </style>
+    </head>
+    <body>
+        <pre>
+            topics:
+            Bootstrap Jumbotron
+            Full-width Jumbotron
+            Bootstrap Images-
+                Rounded Corners
+                Circle
+                Thumbnail
+                Aligning Images
+                Centered Image
+                Responsive Images
+                Bootstrap Alerts
+                    Alert Links
+                    Closing Alerts
+                    Animated Alerts
+                Bootstrap Buttons
+                    Button Styles
+                    Button Elements
+                    Button Outline
+                    Button Sizes
+                    Block Level Buttons
+                    Active/Disabled Buttons
+                    Spinner Buttons
+                    Bootstrap Button Groups
+                    Large and Small Buttons
+                    Vertical Button Groups
+
+        </pre>
+        <h2>bootstrap jumbotron</h2>
+        <div class="container">
+        <div class="jumbotron">     
+            <p>this is bootstrap jumbotron</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis facilis blanditiis dignissimos cupiditate excepturi. Aliquid debitis amet earum non et reprehenderit facilis assumenda repellendus provident consequatur expedita, veritatis dolore.</p>
+        </div>    
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <p> this is full width jumbotron</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sapiente labore reprehenderit. Dignissimos sit quis nulla maiores molestias temporibus recusandae voluptate sed. Veniam temporibus, tenetur ut nisi aut itaque aperiam!</p>
+        </div>
+        </div>
+        <h2>bootstrap images</h2>
+        <div class="container">       
+        <img src="shades.jpg" class="rounded" alt="shades" width="200" height="200"> 
+        </div>
+        <br>
+        <div class="container">
+        <img src="shades.jpg" class="rounded-circle" alt="shades" width="200" height="200"> 
+        </div> 
+        <br>
+        <div class="container">
+        <img src="shades.jpg" class="img-thumbnail" alt="shades" width="200" height="200"> 
+        </div> 
+        <br>
+        <div class="container">
+        <img src="shades.jpg" class="float-left" alt="shades" width="300" height="300"> 
+        </div> 
+        <div class="container">
+        <img src="shades.jpg" class="float-right" alt="shades" width="300" height="300"> 
+        </div> 
+        <br><br><br>
+        <div class="container">
+        <img src="shades.jpg" class="mx-auto d-block" style="width:50%"> 
+        </div> 
+        <br>
+        <div class="container">
+        <img src="shades.jpg" class="img-fluid" alt="shades" width="200" height="200"> 
+        </div> 
+        <br>
+        <br>
+        <h2>bootstrap alerts</h2>
+        <div class="container">
+        <div class="alert alert-success">
+            <strong>Success!</strong>
+        </div>
+        <div class="alert alert-info">
+            <strong>Info!</strong>
+        </div>
+        <div class="alert alert-warning">
+            <strong>Warning!</strong>
+        </div>
+        <div class="alert alert-danger">
+            <strong>Danger!</strong>
+        </div>
+        <div class="alert alert-primary">
+            <strong>Primary!</strong>
+        </div>
+        <div class="alert alert-secondary">
+            <strong>Secondary!</strong>
+        </div>
+        <div class="alert alert-dark">
+            <strong>Dark!</strong>
+        </div>
+        <div class="alert alert-light">
+            <strong>Light!</strong>
+        </div>
+        </div> 
+        <br><br><br>
+<h2>Dismiss</h2>
+        <div class="container">
+            <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Success!</strong>
+        </div>
+        <div class="alert alert-info alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Info!</strong>
+        </div>
+        <div class="alert alert-warning alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Warning!</strong>
+        </div>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Danger!</strong>
+        </div>
+        </div>
+        </div> <br><br><br>
+        <div class="container">
+        <h2>Animated Alerts</h2>
+        
+        <div class="alert alert-primary alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Primary!</strong>
+        </div>
+        <div class="alert alert-secondary alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Secondary!</strong>
+        </div>
+        <div class="alert alert-dark alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Dark!</strong>
+        </div>
+        <div class="alert alert-light alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Light!</strong>
+        </div>
+        </div>
+        <div class="container">
+        <h2>Alert Links</h2>
+        <div class="alert alert-success">
+            <a href="#" class="alert-link">Click HERE</a>
+            <strong>Success!</strong>
+        </div>
+        </div>
+        <h2>Bootstrap Buttons</h2>
+        <div class="container">
+        <h2>Button Styles</h2>
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-link">Link</button>      
+        </div><br><br>
+
+        <div class="container">
+        <h2>Button Elements</h2>
+        <a href="#" class="btn btn-info" role="button">Link Button</a>
+        <button type="button" class="btn btn-info">Button</button>
+        <input type="button" class="btn btn-info" value="Input Button">
+        <input type="submit" class="btn btn-info" value="Submit Button">
+        </div><br><br><br>
+        <div class="container">
+        <h2>Button Outline</h2>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <button type="button" class="btn btn-outline-light text-dark">Light</button>
+        </div><br><br><br>
+
+        <div class="container">
+        <h2>Button Sizes</h2>
+        <button type="button" class="btn btn-primary btn-lg">Large</button>
+        <button type="button" class="btn btn-primary">Default</button>    
+        <button type="button" class="btn btn-primary btn-sm">Small</button>
+        </div>
+        <br><br><br>
+        <div class="container">
+        <h2>Block Level Buttons</h2>
+        <button type="button" class="btn btn-primary btn-block">Button 1</button>
+        <button type="button" class="btn btn-success btn-block">Button 2</button>
+        <br>
+        <h2>Large Block Level Buttons</h2>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Button 1</button>
+        <button type="button" class="btn btn-success btn-lg btn-block">Button 2</button>
+        <br>
+        <h2>Small Block Level Buttons</h2>
+        <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+        <button type="button" class="btn btn-success btn-sm btn-block">Button 2</button>
+        </div>
+        <br><br><br>
+        <div class="container">
+        <h2>Button States</h2>
+        <button type="button" class="btn btn-primary">Primary Button</button>
+        <button type="button" class="btn btn-primary active">Active Primary</button>
+        <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+        <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+        </div>
+        <br><br><br>
+        <div class="container">
+        <h2>Spinner Buttons</h2>
+        <p>Add spinners to buttons:</p>                                      
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+        </button>
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..
+        </button>
+        <button class="btn btn-primary" disabled>
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..
+        </button>
+        <button class="btn btn-primary" disabled>
+            <span class="spinner-grow spinner-grow-sm"></span>
+            Loading..
+        </button>
+        </div>
+        <br><br><br><br>
+        <div class="container">
+            <h2>Button Group</h2>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">button 1</button>
+                <button type="button" class="btn btn-primary">button 2</button>
+                <button type="button" class="btn btn-primary">button 3</button>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Button Groups Sizes</h2>
+            <h3>Large</h3>
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-primary">button 1</button>
+            </div>
+            <h3>Default</h3>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">button 1</button>
+            </div>
+            <h3>Small</h3>
+            <div class="btn-group btn-group-sm">
+                <button type="button" class="btn btn-primary">button 1</button>]
+            </div>
+        </div>
+        <div class="container">
+            <h2>Vertical Button Group</h2>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary">button 1</button>
+                <button type="button" class="btn btn-primary">button 2</button>
+                <button type="button" class="btn btn-primary">button 3</button>
+            </div>
+        </div>
+        <div class="container">
+        <h2>Nesting Button Groups</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">button 1</button>
+            <button type="button" class="btn btn-primary">button 2</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">drop</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">drop1</a>
+                    <a class="dropdown-item" href="#">drop2</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+        <h2>Split Buttons</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">button 1</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            <span class="caret">
+            </span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">drop1</a>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+        <h2>Vertical Button Group with Dropdown</h2>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary">button 1</button>
+            <button type="button" class="btn btn-primary">button 2</button>
+            <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">drops</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">drop1</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <h2>Button Group</h2>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">button 1</button>
+                <button type="button" class="btn btn-primary">button 2</button>
+                <button type="button" class="btn btn-primary">button 3</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">button 1</button>
+                <button type="button" class="btn btn-primary">button 2</button>
+                <button type="button" class="btn btn-primary">button 3</button>
+            </div>
+        </div>
+        <br><br>
+    </body>
+</html>
