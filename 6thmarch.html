@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th march practice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    pre{
+        background-color: darkkhaki;
+        font-family: cursive;
+    }
+    div.container{
+        background-color: rgb(223, 240, 217);
+        padding: 20px;
+    }
+    h2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(13, 46, 19);
+    }
+    
+</style>
+<body>
+    <pre>
+        Topics:
+        Bootstrap Cards-
+            Header and Footer
+            Contextual Cards
+            Titles, text, and links
+            Card Images
+            Stretched Link
+            Card Image Overlays
+            Card Columns
+            Card Deck
+            Card Group
+        Bootstrap Dropdowns-
+            Basic Dropdown
+            Dropdown Divider
+            Disable and Active items
+            Dropdown Position
+            Dropdown Menu Right
+            Dropup
+            Dropdown Text
+        Bootstrap Collapse
+        Accordion
+        Bootstrap Navs-
+            Nav Menus
+            Aligned Nav
+            Vertical Nav
+            Tabs
+            Pills
+            Justified Tabs / Pills
+            Toggleable / Dynamic Tabs
+            Toggleable / Dynamic Pills
+    </pre>
+<div class="container">
+  <h2>Basic Card</h2>
+  <div class="card">
+    <div class="card-body">Basic card</div>
+  </div><br><br>
+  <div class="card">
+    <div class="card-header">Header</div>
+    <div class="card-body">Body</div>
+    <div class="card-footer">Footer</div>
+</div>
+</div>
+<br>
+<div class="container">
+  <h2>Card titles, text, and links</h2>
+    <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some example text. Some example text.</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Card Image</h2>
+  <p>Image at the top:</p>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="flat-design-pixel-art-cloud-illustration.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum sapiente excepturi labore cumque aperiam, laborum earum exercitationem delectus hic dicta suscipit id omnis nihil numquam beatae officiis accusamus harum?</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+<p>Image at the bottom:</p>
+  <div class="card" style="width:400px">
+    <div class="card-body">
+      <h4 class="card-title">Jane Doe</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deserunt fugit aliquam suscipit aperiam debitis ratione expedita dolorem nihil qui assumenda harum atque libero, recusandae quasi animi, quidem dolores reiciendis.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+    <img class="card-img-bottom" src="flat-design-pixel-art-cloud-illustration.jpg" alt="Card image" style="width:100%">
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Stretched Link in Card</h2>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="flat-design-pixel-art-cloud-illustration.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit dolorem, fugiat commodi earum id. Voluptatum, beatae unde. Maiores quod asperiores eum sapiente temporibus laborum repellat provident alias fuga quasi.</p>
+      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Card Image Overlay</h2>
+  <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="flat-design-pixel-art-cloud-illustration.jpg" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias inventore, sit recusandae quisquam, ex odio deserunt distinctio doloremque mollitia velit in dolore corporis? Officia repellendus iste cum non, rem ullam!</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>Cards Columns</h2>
+  <div class="card-columns">
+    <div class="card bg-primary"><div class="card-body text-center">
+        <p class="card-text">Some text inside the first card</p>
+      </div></div>
+    <div class="card bg-warning"><div class="card-body text-center">
+        <p class="card-text">Some text inside the second card</p>
+      </div></div>
+<div class="card bg-success"><div class="card-body text-center">
+        <p class="card-text">Some text inside the third card</p>
+      </div></div>
+    <div class="card bg-danger"><div class="card-body text-center">
+        <p class="card-text">Some text inside the fourth card</p>
+      </div> </div>  
+    <div class="card bg-light"><div class="card-body text-center">
+        <p class="card-text">Some text inside the fifth card</p>
+      </div></div>
+    <div class="card bg-info"><div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div> </div>
+     <div class="card bg-light"><div class="card-body text-center">
+        <p class="card-text">Some text inside the fifth card</p>
+      </div></div>
+    <div class="card bg-info"><div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div></div>
+     <div class="card bg-info"><div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div></div>
+     <div class="card bg-info"><div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div></div>
+<div class="card bg-primary"><div class="card-body text-center">
+        <p class="card-text">Some text inside the first card</p>
+      </div></div>
+    <div class="card bg-warning"><div class="card-body text-center">
+        <p class="card-text">Some text inside the second card</p>
+      </div></div>
+    <div class="card bg-success"><div class="card-body text-center">
+        <p class="card-text">Some text inside the third card</p>
+      </div></div>
+    <div class="card bg-danger"><div class="card-body text-center">
+        <p class="card-text">Some text inside the fourth card</p>
+      </div></div>  
+    <div class="card bg-light"><div class="card-body text-center">
+        <p class="card-text">Some text inside the fifth card</p>
+      </div></div>
+    <div class="card bg-info"><div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div></div>
+     <div class="card bg-light"><div class="card-body text-center">
+        <p class="card-text">Some text inside the fifth card</p>
+      </div></div>
+    <div class="card bg-info"><div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div></div>
+<div class="card bg-info">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Card Deck</h2>
+  <div class="card-deck">
+    <div class="card bg-primary"><div class="card-body text-center">
+        <p class="card-text">Some text inside the first card</p><p class="card-text">Some more text to increase the height</p>
+        <p class="card-text">Some more text to increase the height</p><p class="card-text">Some more text to increase the height</p><p class="card-text">Some more text to increase the height</p><p class="card-text">Some more text to increase the height</p></div></div>
+    <div class="card bg-warning"><div class="card-body text-center">
+        <p class="card-text">Some text inside the second card</p>
+      </div></div>
+    <div class="card bg-success"><div class="card-body text-center">
+        <p class="card-text">Some text inside the third card</p>
+      </div></div>
+    <div class="card bg-danger"><div class="card-body text-center">
+        <p class="card-text">Some text inside the fourth card</p>
+      </div></div>  </div></div><br>
+<div class="container">
+  <h2>Card Group</h2>
+  <div class="card-group">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the first card</p>
+        <p class="card-text">Some more text to increase the height</p>
+        <p class="card-text">Some more text to increase the height</p>
+        <p class="card-text">Some more text to increase the height</p>
+        <p class="card-text">Some more text to increase the height</p>
+        <p class="card-text">Some more text to increase the height</p>
+      </div>
+    </div>
+    <div class="card bg-warning"><div class="card-body text-center">
+        <p class="card-text">Some text inside the second card</p>
+      </div></div>
+    <div class="card bg-success"><div class="card-body text-center">
+        <p class="card-text">Some text inside the third card</p>
+      </div></div>
+    <div class="card bg-danger"><div class="card-body text-center">
+        <p class="card-text">Some text inside the fourth card</p>
+      </div></div>  </div></div>
+<br><br>
+<div class="container">
+  <h2>Dropdowns</h2>                                         
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div></div>
+<div class="container">
+  <h2>Dropdowns divider</h2>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+      <div class="dropdown-divider"></div>
+     <a class="dropdown-item" href="#">Another link</a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Dropdowns header</h2>
+   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+<div class="dropdown-menu">
+      <h5 class="dropdown-header">Dropdown header</h5>
+<a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+	   <div class="dropdown-divider"></div>
+      <h5 class="dropdown-header">Dropdown header</h5>
+      <a class="dropdown-item" href="#">Another link</a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Dropdowns active</h2>
+<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Normal</a>
+      <a class="dropdown-item active" href="#">Active</a>
+      <a class="dropdown-item disabled" href="#">Disabled</a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Dropdowns right position</h2>
+  <div class="dropdown dropright">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropright button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div></div></div>
+<br>
+<div class="container">
+  <h2>Dropdowns left</h2>
+  <div class="dropdown dropleft float-right">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropleft button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div></div></div>
+<br>
+<div class="container">
+  <h2>Dropdowns</h2>
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Wide dropdown button to demonstrate this example
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div></div></div>
+<br>
+<div class="container">
+  <h2>Drop up</h2>
+  <div class="dropup">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropup button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+    </div></div></div>
+<br>
+<div class="container">
+  <h2>Dropdowns text</h2>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item-text" href="#">Text Link</a>
+      <span class="dropdown-item-text">Just Text</span>
+    </div></div></div>
+<br>
+<div class="container">
+  <h2>Nesting Button Groups</h2>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">one</button>
+    <button type="button" class="btn btn-primary">one</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">three</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">one</a>
+        <a class="dropdown-item" href="#">two</a>
+      </div></div></div></div>
+<br>
+<div class="container">
+  <h2>Dropdown Split Buttons</h2>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a><a class="dropdown-item" href="#">Link 2</a>
+    </div></div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a><a class="dropdown-item" href="#">Link 2</a>
+    </div></div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a><a class="dropdown-item" href="#">Link 2</a>
+    </div></div>
+<div class="btn-group">
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a><a class="dropdown-item" href="#">Link 2</a>
+    </div></div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a><a class="dropdown-item" href="#">Link 2</a>
+    </div></div>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a><a class="dropdown-item" href="#">Link 2</a>
+    </div></div></div>
+<br>
+<div class="container">
+  <h2>Vertical Button Group with Dropdown</h2>
+  <div class="btn-group-vertical">
+    <button type="button" class="btn btn-primary">one</button>
+    <button type="button" class="btn btn-primary">two</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        three
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">one</a>
+        <a class="dropdown-item" href="#">two</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <h2>Simple Collapsible</h2>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Simple collapsible</button>
+  <div id="demo1" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div><br>
+<div class="container">
+  <h2>Show Collapsible Content By Default</h2>
+ <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo11">Simple collapsible</button>
+  <div id="demo11" class="collapse show">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <h2>Accordion Example</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </div>
+<div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+<div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Collapsible Group Item #2</a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div></div></div></div></div> 
+<br><br>
+<div class="container">
+  <h2>Nav</h2>
+  <p>Basic horizontal menu:</p>
+  <ul class="nav">
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div>
+<br>
+<div class="container">
+  <h2>Nav</h2>
+  <p>Left-aligned nav (default):</p>
+  <ul class="nav">
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+<br>
+<br>
+<p class="text-center">Centered nav:</p>
+  <ul class="nav justify-content-center">
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+<p class="text-right">Right-aligned nav:</p>
+  <ul class="nav justify-content-end">
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div>
+<br>
+<div class="container">
+  <h2>Vertical Nav</h2>
+  <ul class="nav flex-column">
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div><br>
+<div class="container">
+  <h2>Navigation Tabs</h2>
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div>
+<br>
+<div class="container">
+  <h2>Navigation Pills</h2>
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div>
+<br>
+<div class="container">
+  <h2>Justified Tabs/Pills</h2>
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul><br>
+  <p>Justified tabs:</p>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div>
+<br>
+<div class="container">
+  <h2>Pills with Dropdown</h2>
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a><div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a><a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a></div></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div>
+<br>
+<div class="container">
+  <h2>Tabs with Dropdown</h2>
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+      <div class="dropdown-menu"><a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a><a class="dropdown-item" href="#">Link 3</a></div></li>
+    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+  </ul>
+</div>
+<br>
+<div class="container">
+  <h2>Toggleable Tabs</h2>
+  <br>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home">Home</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p></div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Toggleable Pills</h2>
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home1">Home</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu11">Menu 1</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menu21">Menu 2</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home1" class="container tab-pane active"><br>
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+    <div id="menu11" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+    <div id="menu21" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p></div>
+  </div>
+</div>
+
+</body>
+</html>
